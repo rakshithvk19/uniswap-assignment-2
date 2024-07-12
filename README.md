@@ -1,66 +1,57 @@
-## Foundry
+# Objective
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+The objective of this assignment is to familiarize the students with the advance architecture and functionality of UniswapV2 and DEX’s in general.It has multiple code snippets that the students need to complete along with the following the best code practices which are enforced by passing test cases.
 
-Foundry consists of:
+Detailed explanation of what is expected in the code snippet is provided in each of the contract code.
+Students are also provided with a few research questions regarding the architecture of the uniswapV2 to help them understand why the code in modelled in a particular way. 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+# Outcome
 
-## Documentation
+Students get to understand and get some hands on experience in UniswapV2 and UniswapV3 concepts such as Swapping tokens, exploring sandwich attacks, flash loans, Multi-hops and Time-Weighted Average Pricing and more.
 
-https://book.getfoundry.sh/
+# Instructions
+- Git clone the assignment.
+- Install Foundry and the code dependencies.
+  ```shell
+  forge install
+  ```
+- Complete the pseudo code present in the `src` direcctory. Each `.sol` file represents a concept used in UniswapV2.
+- Each file also has a few research questions found [here](./Research-Questions.md) that encourages you to explore regarding the design of the code.
+- Once the pseudo code is completed, run the tests written for each particular file.
+- Make sure all the test cases are passing. The test cases are written emphasising the best code practises in solidity.
 
-## Usage
+### How to run tests
 
-### Build
-
+- The test forks mainnet so as to interact with contracts on a real network and also give a more realistic experience. Go to [Alchemy](https://alchemy.com) or [infura](https:/infura.io) 
+to get `your_mainnet_rpc_url`.
+- Once you get the rpc-url, create a `.env` file and add it.
+- Run the following script to save your `.env` file in foundry.
+  ```shell
+  $ source .env
+  ```
+- Run tests for a particular question using the below script.   
 ```shell
-$ forge build
+$ forge test --fork-url <your_mainnet_rpc_url> --match-path test/<test_filename> 
 ```
+- Do not update the test cases written to solve your code, rather write your code to pass the test cases.
+- To debug the errors faced while running the tests, increase the verbosity `-vvvv` to get the stack trace of the test execution.
+  ```shell
+  $ forge test --fork-url <your_mainnet_rpc_url> --match-path test/<test_filename> -vvvv
+  ```
 
-### Test
+#### Test Your RPC with HelloWorld Puzzle
 
+Run the following command:
 ```shell
-$ forge test
+$ forge test --fork-url <your_mainnet_rpc_url> --match-path test/HelloWorld.t.sol
 ```
+If the test passes, RPC is working, else, it might have exceeded its rate limit or typo in the url.
 
-### Format
+## Suggested Order for solving the assignment questions
 
-```shell
-$ forge fmt
-```
 
-### Gas Snapshots
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Additional Resources
+- [Foundry Docs](https://book.getfoundry.sh/)
+- [UniswapV2 Docs](https://docs.uniswap.org/contracts/v2/overview)
+- [Solidity Docs](https://soliditylang.org/)
