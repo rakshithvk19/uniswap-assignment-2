@@ -50,7 +50,8 @@ If the test passes, RPC is working, else, it might have exceeded its rate limit 
 ## Suggested Order for solving the assignment questions
 - [ExactSwap](./src/ExactSwap.sol)
 - [ExactSwapWithRouter](./src/ExactSwapWithRouter.sol)
-- [MultiHop]
+- [MultiHop](./src/MultiHop.sol)
+- [Sandwich-Swap](./src/SandwichSwap.sol)
 - 
 
 ## Additional Resources

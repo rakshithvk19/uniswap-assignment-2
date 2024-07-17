@@ -12,3 +12,8 @@
 1. How does Uniswap V2's pricing mechanism work across multiple hops, and how does it ensure the best possible exchange rate?
 2. How does the Uniswap V2 router handle slippage in multi-hop swaps, and what strategies can be employed to minimize its impact?
 3. What are the limitations of multi-hop swaps in Uniswap V2, and how do they compare to more advanced DEX aggregators?
+
+## SandwichSwap.sol
+1. What role does slippage tolerance play in preventing sandwich attacks, and how can users protect themselves?
+2. What on-chain and off-chain solutions are being developed to mitigate the risk of sandwich attacks in decentralized exchanges?
+3. How do gas prices and network congestion affect the execution and profitability of sandwich attacks?
