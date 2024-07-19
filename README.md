@@ -38,6 +38,10 @@ $ forge test --fork-url <your_mainnet_rpc_url> --match-path test/<test_filename>
   ```shell
   $ forge test --fork-url <your_mainnet_rpc_url> --match-path test/<test_filename> -vvvv
   ```
+- If you get an error that says unable to resolve env variable, run the following command and run the tests again.
+  ```shell
+  $ source .env
+  ```
 
 #### Test Your RPC with HelloWorld Puzzle
 
