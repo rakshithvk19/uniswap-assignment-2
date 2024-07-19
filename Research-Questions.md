@@ -17,3 +17,9 @@
 1. What role does slippage tolerance play in preventing sandwich attacks, and how can users protect themselves?
 2. What on-chain and off-chain solutions are being developed to mitigate the risk of sandwich attacks in decentralized exchanges?
 3. How do gas prices and network congestion affect the execution and profitability of sandwich attacks?
+
+## SyncAndSkim.sol
+1. What is token rebasing, and how does AMPL token manage its token supply and holder balances?
+2. Explain how does UniswapV2's `skim()` work and provide and example of a situation when it might be invoked.
+3. Explain how does UniswapV2's `sync()` work and provide and example of a situation when it might be invoked.
+4. How might arbitrageurs take advantage of situations where `sync()` or `skim()` haven't been called?

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import {Test, console2} from "forge-std/Test.sol";
-import {Attacker, Victim} from "../src/SandwickSwap.sol";
+import {Attacker, Victim} from "../src/SandwichSwap.sol";
 import "../src/interfaces/IERC20.sol";
 
 contract SandwichSwapTest is Test {

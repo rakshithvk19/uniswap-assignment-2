@@ -52,7 +52,8 @@ If the test passes, RPC is working, else, it might have exceeded its rate limit 
 - [ExactSwapWithRouter](./src/ExactSwapWithRouter.sol)
 - [MultiHop](./src/MultiHop.sol)
 - [Sandwich-Swap](./src/SandwichSwap.sol)
-- 
+- [TWAP]
+- [Sync-Skim]
 
 ## Additional Resources
 - [Foundry Docs](https://book.getfoundry.sh/)
